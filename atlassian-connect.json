@@ -1,0 +1,24 @@
+{
+  "key": "com.ricardo.restCalles",
+  "name": "Ricardos restCaller",
+  "description": "to call rest calls for restricted connect parameters",
+  "baseUrl": "{{localBaseUrl}}",
+  "apiVersion": 1,
+  "modules": {
+    "generalPages": [
+      {
+        "url": "/update-issue",
+        "key": "update-issue",
+        "name": {
+          "value": "Update Issue"
+        },
+        "location": "system.top.navigation.bar"
+      }
+    ],
+    "webhooks": []
+  },
+  "authentication": {
+    "type": "jwt"
+  },
+  "scopes": ["READ", "WRITE"]
+}
